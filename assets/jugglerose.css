@@ -1,0 +1,225 @@
+/*colors:
+Pink: #FF5565
+White: #F0F5FB
+Blue: #00869B
+Black: #000000
+*/
+body{
+  font-size: 16px;
+  font-family: 'Helvetica Neue','Open Sans',Arial,sans-serif;
+}
+
+p{
+  font-size: 18px;
+}
+
+.bluefont{
+  color: #00869B;
+}
+
+.whitefont{
+  color: #F0F5FB;
+}
+
+.vertical-center {
+    min-height: 80%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.nogutter > [class*=col-]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+hr{
+    max-width: 50px;
+    border-color: #F0F5FB;
+}
+
+.lineWidth{
+  border-width: 3px;
+}
+
+/* Landing */
+.mainTitle{
+  font-size: 50px;
+}
+
+.subTitle{
+  font-size: 25px;
+}
+
+button{
+  background-color: #F0F5FB;
+  border-radius: 28px;
+  padding: 10px 20px 10px 20px;
+}
+
+#morebutton{
+  color: #FF5565;
+}
+
+/* NAV */
+
+nav.navbar.navbar-inverse{
+  margin-bottom: 0;
+  background-color: #F0F5FB;
+  border-color: #F0F5FB;
+}
+
+ul.nav.navbar-nav{
+  float: right;
+}
+
+.navbar-inverse .navbar-brand{
+  color: none;
+}
+a.navbar-brand{
+  color: #F0F5FB;
+}
+
+#index{
+  background: url("img/pink-laptop-majo-villalon-412447.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  background-position: 50%;
+}
+
+/* ABOUT & SKILLS SECTION */
+
+#aboutskills{
+  /*height: 100vh;*/
+}
+
+#about{
+  /*height: 50vh;*/
+  padding: 100px 0;
+  background-color: #FF5565;
+}
+
+#skills{
+  padding: 100px 0;
+  background-color: #F0F5FB;
+}
+
+#skills hr{
+  border-color: #FF5565;
+}
+
+ul{
+  display: inline-block;
+  width: 49%;
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  padding: 0.5em 0;
+  font-size: 18px;
+}
+
+#invisible{
+  background-color: gray;
+  height: 70vh;
+  display: /*none*/
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio{
+  background-color: #F0F5FB;
+  /*height: 100vh;*/
+}
+
+img{
+  max-width:100%;
+}
+
+/* CONTACT SECTION */
+
+#contact{
+  padding: 100px 0;
+}
+
+#contact hr{
+  border-color: #FF5565;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
+textarea{
+  width: 100%;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+input[type=submit]{
+  background-color: #FF5565
+}
+
+#contactForm input{
+  margin-bottom: 5px;
+}
+
+
+/* TABLETS */
+@media screen and (min-width: 480px){
+  /* NAV BAR */
+
+  nav.navbar.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  /* Index Section */
+
+  .mainTitle{
+    font-size: 65px;
+  }
+
+  .subTitle{
+    font-size: 35px;
+  }
+
+
+  #index{
+    background-position: 40%;
+  }
+
+  /*Skills Section */
+  ul{
+    width: 24%;
+  }
+}
+
+/* FOOTER */
+footer{
+  background-color: #FF5565;
+  padding: 40px 0;
+
+}
+
+.social{
+  width: 50px;
+}
+
+.copyright{
+  padding-top: 20px;
+  color:  #F0F5FB;
+  font-size: 12px;
+}
+
+
+
+@media screen and (min-width: 780px){
+  /* INDEX SECTION */
+  #index{
+    background-position: 50%;
+  }

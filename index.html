@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/jugglerose.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">COREAN GONZALES</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#porfolio">PORTFOLIO</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </div>
+   </nav>
+
+    <div id="index">
+      <div class="vertical-center">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-xs-10 col-xs-offset-1">
+              <h1 class="mainTitle bluefont">COREAN GONZALES</h1>
+              <h3 class="subTitle bluefont">Full Stack Developer</h3>
+              <button id="morebutton" type="button"><b>LEARN MORE</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="aboutskills">
+      <div id="about" class="whitefont">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-xs-8 col-xs-offset-2">
+              <h3 class="subTitle">ABOUT ME</h3>
+              <hr class="lineWidth">
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-center col-xs-8 col-xs-offset-2">
+              <p>Hello! My name is Corean and I am a web developer based in
+              Austin, TX. I love designing and developing static websites and dynamic
+              web apps. My background is in performance art. I love merging my
+              eye for aesthetic and precision from my performance background into
+              web development. </p>
+            <p>I find the process to be very similiar to choreographing
+            a performance routine:  Taking the idea/concept, wireframing/mockups (writing
+            the choreography), coding and perfecting (rehearsing), then finally
+            revealing the site (the debut performance).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-xs-8 col-xs-offset-2">
+              <h3 class="subTitle">SKILLS</h3>
+              <hr class="lineWidth">
+            </div>
+          </div>
+          <section id="list" class="text-center">
+            <ul>
+              <li>JavaScript</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+            </ul>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Photoshop</li>
+              <li>AdobeXD</li>
+            </ul>
+            <ul>
+              <li>React</li>
+              <li>HTML/HTML5</li>
+              <li>CSS/CSS3</li>
+            </ul>
+            <ul>
+              <li>Responsive Web</li>
+              <li>BootStrap</li>
+              <li>Express</li>
+            </ul>
+          </section>
+      </div>
+    </section>
+
+    <div id="invisible">
+    </div>
+
+    <section id="portfolio">
+      <div class="container-fluid">
+        <div class="row nogutter">
+          <div class="col-xs-12 col-sm-6 contain">
+            <img class="image" src="assets/img/circus.png" alt="circus website">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 ">
+            <img src="assets/img/blog.png" alt="Blog Site">
+          </div>
+        </div>
+        <div class="row nogutter">
+          <div class="col-xs-12 col-sm-6 ">
+            <img src="assets/img/tictactoe.png" alt="Tic Tac Toe Game">
+          </div>
+          <div class="col-xs-12 col-sm-6 ">
+            <img src="assets/img/jugglesite.png" alt="Site for a Juggling Meet UP">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-xs-8 col-xs-offset-2">
+              <h3 class="subTitle">CONTACT ME</h3>
+              <hr class="lineWidth">
+              <p>I would love to hear from you!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Name"><br>
+              <input type="email" name="email" placeholder="Email"><br>
+              <textarea rows="6" placeholder="Message"></textarea><br>
+              <input style="color: white"type="submit" value="SUBMIT" id="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-xs-12">
+            <a href="#">
+              <img class="social" src="assets/img/Github.png" alt="Link to Git Hub">
+            </a>
+            <a href="#">
+              <img class="social" src="assets/img/Linkedin.png" alt="Link to Linkedin">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center col-xs-12">
+            <p class="copyright">COPYRIGHT 2017 COREAN GONZALES</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      
