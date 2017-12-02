@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/jugglerose.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/JS/nav.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,20 +18,51 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">COREAN GONZALES</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#porfolio">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT</a></li>
+
+
+  <!--<header id="collapse">
+    <div id="brand">
+      <ul>
+        <li><a href="#">COREAN GONZALES</a></li>
+      </ul>
+    </div>
+    <div id="iconMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+    <nav id="dropdownMenu">
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <header id="fullHeader">
+      <div id="brand">
+        <ul>
+          <li><a href="#">COREAN GONZALES</a></li>
         </ul>
       </div>
-    </nav>-->
+      <nav id="fullNav">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>-->
 
+
+
+
+    <!--Bootstrap NAV -->
+
+    <div class="container">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -37,32 +71,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">WebSiteName</a>
+          <a class="navbar-brand" id="brand" href="#index">COREAN GONZALES</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
    </nav>
+ </div>
 
     <div id="index">
       <div class="vertical-center">
         <div class="container">
           <div class="row">
             <div class="text-center col-xs-10 col-xs-offset-1">
-              <h1 class="mainTitle bluefont">COREAN GONZALES</h1>
-              <h3 class="subTitle bluefont">Full Stack Developer</h3>
+              <h1 class="mainTitle whitefont">COREAN GONZALES</h1>
+              <h3 class="subTitle whitefont">Full Stack Developer</h3>
               <button id="morebutton" type="button"><b>LEARN MORE</b></button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <section id="aboutskills">
       <div id="about" class="whitefont">
@@ -129,9 +165,6 @@
         <div class="row nogutter">
           <div class="col-xs-12 col-sm-6 contain">
             <img class="image" src="assets/img/circus.png" alt="circus website">
-              <div class="overlay">
-                <div class="text">Hello World</div>
-              </div>
           </div>
           <div class="col-xs-12 col-sm-6 ">
             <img src="assets/img/blog.png" alt="Blog Site">
@@ -190,6 +223,3 @@
         </div>
       </div>
     </footer>
-
-
-      
