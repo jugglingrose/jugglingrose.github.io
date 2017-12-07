@@ -7,6 +7,7 @@ Black: #000000
 
 /* MISC */
 
+
 body{
   font-size: 16px;
   font-family: 'Helvetica Neue','Open Sans',Arial,sans-serif;
@@ -69,8 +70,21 @@ button{
 /* ---------------------------------------------------------------*/
 /* NAV */
 
+header a {
+  color:  #FF5565;
+}
+
+nav a:hover{
+
+  text-decoration: none;
+}
+
 /* collapse header */
-/*
+
+.active{
+  color: #00869B;
+}
+
 #fullHeader{
   display: none;
 }
@@ -127,14 +141,15 @@ header ul{
   padding-left: 10px;
   display: none;
   position: fixed;
-    background: white;
-    width: 100%;
-    margin-top: 40px;
+  background: white;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 1;
 }
 
-*/
+
 /* Full Header */
-/*
+
 #fullNav{
   display: inline-block;
   float: right;
@@ -154,9 +169,9 @@ header ul{
     display: none;
   }
 }
-*/
 
 
+/*
 nav.navbar.navbar-inverse{
   margin-bottom: 0;
   background-color: #F0F5FB;
@@ -181,6 +196,8 @@ ul.nav.navbar-nav li a{
 #brand{
   color: #FF5565;
 }
+
+*/
 
 
 
@@ -305,7 +322,9 @@ footer{
 
 @media screen and (min-width: 480px){
   /* NAV BAR */
-
+  #dropdownMenu{
+    display: none;
+  }
   /*nav.navbar.navbar-inverse{
     background-color: transparent;
     border-color: transparent;
@@ -336,7 +355,14 @@ footer{
 /* ---------------------------------------------------------------*/
 /* LG Screens */
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 768px){
+  /* NAV */
+  nav.navbar.navbar-inverse{
+    margin-bottom: 0;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
   /* INDEX SECTION */
   #index{
     background-position: 50%;
