@@ -86,23 +86,8 @@ nav a:hover{
   color: #00869B;
   text-decoration: none;
 }
-/*header a {
-  color:  #FF5565;
-}
 
-nav a:hover{
-  text-decoration: none;
-  color: none;
 
-}
-
-nav a:active{
-  color: #FF5565;
-}
-
-header a:hover{
-  text-decoration: none;
-}
 /* collapse header */
 
 .active{
@@ -195,7 +180,17 @@ header ul{
 }
 
 
+
 /*
+.active{
+  color: #00869B;
+}
+
+.navbar-inverse .navbar-nav>.active{
+    color: yellow;
+    background: none;
+}
+
 nav.navbar.navbar-inverse{
   margin-bottom: 0;
   background-color: #F0F5FB;
@@ -220,9 +215,7 @@ ul.nav.navbar-nav li a{
 #brand{
   color: #FF5565;
 }
-
 */
-
 
 
 #index{
