@@ -1,5 +1,5 @@
 //needs to be corrected //
-$(document).ready(function(){
+/*$(document).ready(function(){
 
   var menuVisible = false;
 
@@ -15,3 +15,4 @@ $(document).ready(function(){
     return;
   });
 });
+*/

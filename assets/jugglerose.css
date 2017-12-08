@@ -69,7 +69,7 @@ button{
 
 /* ---------------------------------------------------------------*/
 /* NAV */
-
+/*
 nav a{
   color: #FF5565;
 }
@@ -87,9 +87,9 @@ nav a:hover{
   text-decoration: none;
 }
 
-
+*/
 /* collapse header */
-
+/*
 .active{
   color: #00869B;
 }
@@ -156,9 +156,9 @@ header ul{
   z-index: 1;
 }
 
-
+*/
 /* Full Header */
-
+/*
 #fullNav{
   display: inline-block;
   float: right;
@@ -178,19 +178,29 @@ header ul{
     display: none;
   }
 }
+*/
 
 
-
-/*
 .active{
-  color: #00869B;
+  color: #00869B !important;
 }
 
-.navbar-inverse .navbar-nav>.active{
-    color: yellow;
-    background: none;
+/*icon for dropdown menu*/
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background-color: transparent;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar{
+  background-color:#FF5565;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+  color:  #FF5565;
+}
 nav.navbar.navbar-inverse{
   margin-bottom: 0;
   background-color: #F0F5FB;
@@ -209,13 +219,13 @@ a.navbar-brand{
 }
 
 ul.nav.navbar-nav li a{
-  color: black;
+  color: #FF5565;
 }
 
 #brand{
   color: #FF5565;
 }
-*/
+
 
 
 #index{

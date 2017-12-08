@@ -4,7 +4,7 @@ $(document).ready(function(){
   $(document).scroll(function(){
     console.log("window Scroll Top: " + $(window).scrollTop() );
     if ( $(document).scrollTop() < $('#about').offset().top ){
-      $('nav a').removeClass('active');
+      $('nav ul li a').removeClass('active');
     }
     //loop through each section//
     $('.section').each(function(){
@@ -15,8 +15,8 @@ $(document).ready(function(){
         if($(document).scrollTop() >= (($(this).offset().top) - 40)){
           console.log("div offset top:" + $(this).offset().top );
           var id = $(this).attr('id');
-          $('nav a').removeClass('active');
-          $('nav a[href=\\#' + id + ']').addClass('active');
+          $('nav ul li a').removeClass('active');
+          $('nav ul li a[href=\\#' + id + ']').addClass('active');
           }
 
       });
