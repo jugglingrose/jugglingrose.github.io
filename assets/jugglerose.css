@@ -70,15 +70,39 @@ button{
 /* ---------------------------------------------------------------*/
 /* NAV */
 
-header a {
+nav a{
+  color: #FF5565;
+}
+
+header a{
+  color: #FF5565;
+}
+
+nav a:active{
+  color: none;
+}
+
+nav a:hover{
+  color: #00869B;
+  text-decoration: none;
+}
+/*header a {
   color:  #FF5565;
 }
 
 nav a:hover{
-
   text-decoration: none;
+  color: none;
+
 }
 
+nav a:active{
+  color: #FF5565;
+}
+
+header a:hover{
+  text-decoration: none;
+}
 /* collapse header */
 
 .active{
