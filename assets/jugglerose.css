@@ -69,118 +69,6 @@ button{
 
 /* ---------------------------------------------------------------*/
 /* NAV */
-/*
-nav a{
-  color: #FF5565;
-}
-
-header a{
-  color: #FF5565;
-}
-
-nav a:active{
-  color: none;
-}
-
-nav a:hover{
-  color: #00869B;
-  text-decoration: none;
-}
-
-*/
-/* collapse header */
-/*
-.active{
-  color: #00869B;
-}
-
-#fullHeader{
-  display: none;
-}
-
-header{
-  padding-left: 10px;
-  padding-right: 10px;
-  position:fixed;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  z-index: 1;
-}
-header li{
-  padding: 10px 0 0 0;
-}
-header ul{
-  list-style-type: none;
-  padding: 0;
-}
-
-#brand{
-  display: inline-block;
-}
-
-#iconMenu{
-  float: right;
-  width: 35px;
-  height: 17px;
-  margin-top: 10px;
-}
-
-#iconMenu span{
-  width: 100%;
-  height: 3px;
-  background: black;
-  display: block;
-}
-
-#iconMenu span:nth-child(2){
-  margin-top: 10px;
-}
-
-#iconMenu span:nth-child(3){
-  margin-top: 10px;
-}
-
-#dropdownMenu ul{
-  list-style-type: none;
-  padding: 0;
-}
-
-#dropdownMenu{
-  padding-left: 10px;
-  display: none;
-  position: fixed;
-  background: white;
-  width: 100%;
-  margin-top: 40px;
-  z-index: 1;
-}
-
-*/
-/* Full Header */
-/*
-#fullNav{
-  display: inline-block;
-  float: right;
-}
-
-#fullNav li{
-  display: inline-block;
-  padding-right: 10px;
-}
-
-@media only screen and (min-width: 768px){
-  #fullHeader{
-    display: block;
-  }
-
-  #collapse{
-    display: none;
-  }
-}
-*/
-
-
 .active{
   color: #00869B !important;
 }
@@ -194,6 +82,7 @@ header ul{
   background-color:#FF5565;
 }
 
+/*icon for dropdown menu border*/
 .navbar-inverse .navbar-toggle{
   border-color: transparent;
 }
@@ -201,14 +90,16 @@ header ul{
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
   color:  #FF5565;
 }
-nav.navbar.navbar-inverse{
-  margin-bottom: 0;
+
+.whiteNav{
   background-color: #F0F5FB;
   border-color: #F0F5FB;
 }
 
-ul.nav.navbar-nav{
-  float: right;
+.transparentNav{
+  margin-bottom: 0;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-inverse .navbar-brand{
@@ -225,8 +116,6 @@ ul.nav.navbar-nav li a{
 #brand{
   color: #FF5565;
 }
-
-
 
 #index{
   background: url("img/pink-laptop-majo-villalon-412447.jpg") no-repeat center;
@@ -349,13 +238,9 @@ footer{
 
 @media screen and (min-width: 480px){
   /* NAV BAR */
-  #dropdownMenu{
-    display: none;
+  ul.nav.navbar-nav{
+    float: right;
   }
-  /*nav.navbar.navbar-inverse{
-    background-color: transparent;
-    border-color: transparent;
-  }*/
 
   /* Index Section */
 
@@ -366,7 +251,6 @@ footer{
   .subTitle{
     font-size: 35px;
   }
-
 
   #index{
     background-position: 40%;
@@ -384,13 +268,9 @@ footer{
 
 @media screen and (min-width: 768px){
   /* NAV */
-  nav.navbar.navbar-inverse{
-    margin-bottom: 0;
-    background-color: transparent;
-    border-color: transparent;
-  }
 
   /* INDEX SECTION */
   #index{
     background-position: 50%;
   }
+}

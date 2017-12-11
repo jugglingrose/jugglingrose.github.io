@@ -1,8 +1,10 @@
+'use strict'
+
 $(document).ready(function(){
 
   //activate on window scroll//
   $(document).scroll(function(){
-    console.log("window Scroll Top: " + $(window).scrollTop() );
+    console.log( "document scroll top is:" + $(document).scrollTop() );
     if ( $(document).scrollTop() < $('#about').offset().top ){
       $('nav ul li a').removeClass('active');
     }
@@ -13,7 +15,6 @@ $(document).ready(function(){
         //Highlight the matching nav anchor//
 
         if($(document).scrollTop() >= (($(this).offset().top) - 40)){
-          console.log("div offset top:" + $(this).offset().top );
           var id = $(this).attr('id');
           $('nav ul li a').removeClass('active');
           $('nav ul li a[href=\\#' + id + ']').addClass('active');
