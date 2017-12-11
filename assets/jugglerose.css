@@ -3,6 +3,7 @@ Pink: #FF5565
 White: #F0F5FB
 Blue: #00869B
 Black: #000000
+Bright White: #FFF;
 */
 
 /* MISC */
@@ -11,6 +12,7 @@ Black: #000000
 body{
   font-size: 16px;
   font-family: 'Helvetica Neue','Open Sans',Arial,sans-serif;
+  width: 100%;
 }
 
 p{
@@ -22,7 +24,7 @@ p{
 }
 
 .whitefont{
-  color: #F0F5FB;
+  color: #FFF;;
 }
 
 .vertical-center {
@@ -39,7 +41,7 @@ p{
 
 hr{
     max-width: 50px;
-    border-color: #F0F5FB;
+    border-color: #FFF;;
 }
 
 .lineWidth{
@@ -58,7 +60,7 @@ hr{
 }
 
 button{
-  background-color: #F0F5FB;
+  background-color: #FFF;;
   border-radius: 28px;
   padding: 10px 20px 10px 20px;
 }
@@ -92,8 +94,8 @@ button{
 }
 
 .whiteNav{
-  background-color: #F0F5FB;
-  border-color: #F0F5FB;
+  background-color: #FFF;;
+  border-color: #FFF;;
 }
 
 .transparentNav{
@@ -106,7 +108,7 @@ button{
   color: none;
 }
 a.navbar-brand{
-  color: #F0F5FB;
+  color: #FFF;;
 }
 
 ul.nav.navbar-nav li a{
@@ -139,7 +141,7 @@ ul.nav.navbar-nav li a{
 
 #skills{
   padding: 100px 0;
-  background-color: #F0F5FB;
+  background-color: #FFF;
 }
 
 #skills hr{
@@ -158,18 +160,30 @@ ul.nav.navbar-nav li a{
   font-size: 18px;
 }
 
+/* ------------------------------------------------------------------*/
+/* collapsible div section (coming soon...) */
+
 #invisible{
   background-color: gray;
   height: 70vh;
-  display: /*none*/
+  display: none;
 }
 
 /* ---------------------------------------------------------------*/
 /* PORTFOLIO SECTION */
 
 #portfolio{
-  background-color: #F0F5FB;
+  background-color: #FFF;
   /*height: 100vh;*/
+  padding-top: 100px;
+}
+
+#portfolio hr{
+  border-color: #FF5565;
+}
+
+.project{
+  width: 100%;
 }
 
 img{
@@ -181,6 +195,7 @@ img{
 
 #contact{
   padding: 100px 0;
+  background-color: #FFF;
 }
 
 #contact hr{
@@ -228,7 +243,7 @@ footer{
 
 .copyright{
   padding-top: 20px;
-  color:  #F0F5FB;
+  color:  #FFF;
   font-size: 12px;
 }
 
@@ -259,6 +274,13 @@ footer{
   /*Skills Section */
   #skills ul{
     width: 24%;
+  }
+
+  /* Portfolio */
+  .project{
+    display: block;
+    float:left;
+    width: 50%;
   }
 }
 
