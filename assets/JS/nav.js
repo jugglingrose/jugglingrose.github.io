@@ -19,7 +19,7 @@ $(document).ready(function(){
 
   /*on page scroll, set nav bar to white when width > 760 && once user has
   scrolled beyond the hero landing*/
-  
+
   //activate on window scroll//
   $(document).scroll(function(){
     if( $(document).width() < 760){
@@ -31,7 +31,7 @@ $(document).ready(function(){
         $('nav').removeClass('whiteNav');
         $('nav').addClass('transparentNav');
       }
-      else if ( $(document).scrollTop() > $('#about').offset().top){
+      else if ( $(document).scrollTop() > ($('#about').offset().top - 40) ){
         $('nav').removeClass('transparentNav');
         $('nav').addClass('whiteNav');
       }

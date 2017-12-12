@@ -6,7 +6,7 @@ $(document).ready(function(){
   $(document).scroll(function(){
     console.log( "document scroll top is:" + $(document).scrollTop() );
     // if document is in hero landing, remove active from all anchor tags//
-    if ( $(document).scrollTop() < $('#about').offset().top ){
+    if ( $(document).scrollTop() < $('#about').offset().top  ){
       $('nav ul li a').removeClass('active');
     }
 
@@ -33,10 +33,3 @@ $(document).ready(function(){
       }
       });
     });
-
-
-/*  else if ( $(window).scrollTop() + $(window).height() === $(document).height() ){
-    alert('bottom');
-    $('nav ul li a').removeClass('active');
-    $('nav ul li a[href=\\#contact]').addClass('active');
-  }*/
