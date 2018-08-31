@@ -8,6 +8,16 @@ Bright White: #FFF;
 
 /* MISC */
 
+canvas {
+  width: 100%;
+  position: relative;
+}
+
+#index{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
 
 body{
   font-size: 16px;
@@ -27,12 +37,12 @@ p{
   color: #FFF;;
 }
 
-.vertical-center {
+/*.vertical-center {
     min-height: 80%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-}
+}*/
 
 .nogutter > [class*=col-]{
   padding-left: 0;
@@ -53,10 +63,15 @@ hr{
 
 .mainTitle{
   font-size: 50px;
+  color: #FF5565;
 }
 
 .subTitle{
   font-size: 25px;
+}
+
+.secondHeader{
+  color: black;
 }
 
 button{
@@ -72,7 +87,8 @@ button{
 /* ---------------------------------------------------------------*/
 /* NAV */
 .active{
-  color: #00869B !important;
+  /*color: #00869B !important;*/
+  color: #55D6BE !important;
 }
 
 /*icon for dropdown menu*/
@@ -107,6 +123,7 @@ button{
 .navbar-inverse .navbar-brand{
   color: none;
 }
+
 a.navbar-brand{
   color: #FFF;;
 }
@@ -118,14 +135,14 @@ ul.nav.navbar-nav li a{
 #brand{
   color: #FF5565;
 }
-
+/*
 #index{
   background: url("img/pink-laptop-majo-villalon-412447.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   background-position: 50%;
 }
-
+*/
 /* ---------------------------------------------------------------*/
 /* ABOUT & SKILLS SECTION */
 
@@ -268,7 +285,7 @@ footer{
   }
 
   #index{
-    background-position: 40%;
+    top: 35%;
   }
 
   /*Skills Section */
@@ -298,6 +315,6 @@ footer{
 
   /* INDEX SECTION */
   #index{
-    background-position: 50%;
+    top: 40%;
   }
 }
