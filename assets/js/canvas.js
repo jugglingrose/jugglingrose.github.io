@@ -123,11 +123,8 @@ function init() {
   array anytime we resize our window*/
   circleArray = [];
 
-  
-
-  if(window.innerWidth < 450){
-    console.log("inner width is less than 450");
-    for (var i = 0; i < 200; i++){
+  function coordinates(){
+      console.log('coordinates called');
       var radius = Math.random() * 3 + 1;
       var x = Math.random() * (innerWidth - radius * 2) + radius;
       var y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -139,22 +136,18 @@ function init() {
 
       //Create new circle object
       circleArray.push(new Circle(x, y, dx, dy, radius, color));
+  }
+
+  if(window.innerWidth < 450){
+    console.log("inner width is less than 450");
+    for (var i = 0; i < 200; i++){
+      coordinates();
     }
   }
-  else if(window.innerWidth > 401){
+  else if(window.innerWidth > 450){
     console.log("inner width is greater than 400");
     for (var i = 0; i < 800; i++){
-      var radius = Math.random() * 3 + 1;
-      var x = Math.random() * (innerWidth - radius * 2) + radius;
-      var y = Math.random() * (innerHeight - radius * 2) + radius;
-      //dx velocity the speed at which it moves in pixels along the x-axis
-      //dy velocity the speed at which it moves in pixels along the y-axis
-      var dx = (Math.random() - 0.5) * 3;
-      var dy = (Math.random() - 0.5) * 3;
-      var color = random_color();
-
-      //Create new circle object
-      circleArray.push(new Circle(x, y, dx, dy, radius, color));
+        coordinates();
     }
   }
 }
