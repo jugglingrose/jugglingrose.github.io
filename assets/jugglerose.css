@@ -33,6 +33,10 @@ p{
   color: #00869B;
 }
 
+a{
+  color: #55D6BE;
+}
+
 .whitefont{
   color: #FFF;;
 }
@@ -151,7 +155,6 @@ ul.nav.navbar-nav li a{
 }
 
 #about{
-  /*height: 50vh;*/
   padding: 100px 0;
   background-color: #FF5565;
 }
@@ -191,7 +194,6 @@ ul.nav.navbar-nav li a{
 
 #portfolio{
   background-color: #FFF;
-  /*height: 100vh;*/
   padding-top: 100px;
 }
 
@@ -201,6 +203,35 @@ ul.nav.navbar-nav li a{
 
 .project{
   width: 100%;
+}
+
+.projectContain{
+  position: relative;
+}
+
+.projectContain:hover .projectOverlay{
+  opacity: 0.9;
+}
+
+.projectOverlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FF5565;
+  opacity: 0;
+}
+
+.overlayText{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  font-size: 18px;
+  color: #000000;
 }
 
 img{
@@ -251,7 +282,6 @@ input[type=submit]{
 footer{
   background-color: #FF5565;
   padding: 40px 0;
-
 }
 
 .social{
@@ -299,6 +329,7 @@ footer{
     float:left;
     width: 50%;
   }
+
 }
 
 
@@ -310,6 +341,15 @@ footer{
   #portfolio img{
     max-width: 100%;
     /*height: 325px;*/
+
+  }
+
+  /* PORTFOLIO SECTION */
+  .overlayText{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
 
   }
 
