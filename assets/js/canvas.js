@@ -12,8 +12,7 @@ var maxRadius = 50;
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  console.log(mouse);
-})
+});
 
 window.addEventListener("resize", function(){
   canvas.width = window.innerWidth;
@@ -21,7 +20,7 @@ window.addEventListener("resize", function(){
 
   //call init to generate a circles array anytime we resize the page
   init();
-})
+});
 
 // Animation
 
@@ -147,7 +146,7 @@ function init() {
   else if(window.innerWidth > 450){
     console.log("inner width is greater than 400");
     for (var i = 0; i < 800; i++){
-        coordinates();
+      coordinates();
     }
   }
 }
