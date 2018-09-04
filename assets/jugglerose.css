@@ -26,7 +26,7 @@ body{
 }
 
 p{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .bluefont{
@@ -40,13 +40,6 @@ a{
 .whitefont{
   color: #FFF;;
 }
-
-/*.vertical-center {
-    min-height: 80%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}*/
 
 .nogutter > [class*=col-]{
   padding-left: 0;
@@ -91,7 +84,6 @@ button{
 /* ---------------------------------------------------------------*/
 /* NAV */
 .active{
-  /*color: #00869B !important;*/
   color: #55D6BE !important;
 }
 
@@ -205,6 +197,11 @@ ul.nav.navbar-nav li a{
   width: 100%;
 }
 
+.projectsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .projectContain{
   position: relative;
 }
@@ -227,7 +224,7 @@ ul.nav.navbar-nav li a{
 
 .overlayText{
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 20%;
   right: 20%;
   font-size: 18px;
