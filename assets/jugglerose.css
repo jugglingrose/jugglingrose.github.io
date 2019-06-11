@@ -355,3 +355,35 @@ footer{
     top: 40%;
   }
 }
+
+
+#voteFoundationIntro {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+#voteFoundationIntro hr{
+    border-color: #FF5565;
+}
+
+.projectOne {
+    padding-top: 50px;
+    background-color: #FF5565;
+    color: #FFF;
+}
+
+.projectTwo {
+  padding-top: 50px;
+}
+
+.projectTwo hr {
+  border-color: #FF5565;
+}
+
+.projectTwoImages {
+  margin-top: 50px;
+}
+
+.projectOneImages {
+  margin-top: 50px;
+}
